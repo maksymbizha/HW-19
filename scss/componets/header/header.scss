@@ -1,0 +1,55 @@
+header{
+  margin-top: 40px;
+  .row{
+	justify-content: space-around;
+  }
+  .header--logo-form{
+	display: flex;
+	gap: 140px;
+	form{
+	  display: flex;
+	  button{
+		border: transparent;
+		background: transparent;
+		cursor: pointer;
+	  }
+	  input{
+		border: transparent;
+		background: transparent;
+		font-size: 17px;
+		line-height: 22px;
+		padding: 0 10px;
+	  }
+	}
+  }
+  .header--img{
+  display: flex;
+  gap: 43px;
+  }
+  ul{
+	display: flex;
+	gap: 42px;
+	li{
+	  a{
+		text-decoration: none;
+		font-size: 17px;
+		line-height: 22px;
+		color: #000000;
+	  }
+	  .active{
+		text-decoration: underline;
+	  }
+	  a:hover{
+		text-decoration: underline;
+	  }
+	}
+  }
+}
+
+
+
+
+
+
+
+
