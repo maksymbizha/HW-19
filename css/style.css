@@ -107,6 +107,10 @@ header .header--logo-form form button {
   background: transparent;
   cursor: pointer;
 }
+header .header--logo-form form button img {
+  height: 20px;
+  width: 20px;
+}
 header .header--logo-form form input {
   border: transparent;
   background: transparent;
@@ -114,9 +118,9 @@ header .header--logo-form form input {
   line-height: 22px;
   padding: 0 10px;
 }
-header .header--img {
-  display: flex;
-  gap: 43px;
+header .header-mob-menu-btn-input,
+header .header-mob-menu-btn-label {
+  display: none;
 }
 header ul {
   display: flex;
@@ -133,6 +137,59 @@ header ul li .active {
 }
 header ul li a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 1100px) {
+  header .header--logo-form {
+    gap: 40px;
+  }
+  header ul {
+    gap: 25px;
+  }
+}
+@media (max-width: 897px) {
+  header header {
+    position: relative;
+  }
+  header form {
+    width: 55%;
+  }
+  header form input {
+    width: 100%;
+  }
+  header .header-mob-menu-btn-label {
+    display: inline-block;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 7px 20px;
+    background-color: #fff4ba;
+    border-radius: 15px;
+  }
+  header nav {
+    display: none;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    left: 0;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+  header nav ul li a {
+    display: block;
+    text-align: center;
+  }
+  header nav ul li a img {
+    margin: 0 auto;
+  }
+  header .header-mob-menu-btn-input:checked + nav {
+    display: initial;
+  }
+}
+@media (max-width: 530px) {
+  header .header--logo-form form {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

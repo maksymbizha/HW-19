@@ -12,6 +12,10 @@ header{
 		border: transparent;
 		background: transparent;
 		cursor: pointer;
+		img{
+		  height: 20px;
+		  width: 20px;
+		}
 	  }
 	  input{
 		border: transparent;
@@ -22,9 +26,9 @@ header{
 	  }
 	}
   }
-  .header--img{
-  display: flex;
-  gap: 43px;
+  .header-mob-menu-btn-input,
+  .header-mob-menu-btn-label {
+	  display: none;
   }
   ul{
 	display: flex;
